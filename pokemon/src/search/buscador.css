@@ -1,0 +1,59 @@
+.title{
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    margin-block-start: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    text-shadow: 4px 4px 8px #0009;
+    background-color: #fff3;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    background-color: #fff3;
+    gap: .5rem;
+    padding-block-end: 1rem;
+}
+.input-buscador{
+    font-size: 1rem;
+    color: #0009;
+    width: 50%;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 8px #0009;
+    outline: none;
+}
+.input-buscador::placeholder{
+    color: #0006;
+    font-size: 1rem;
+    
+}
+.btn-buscar{
+    background-color: #26e;
+    color: #f2f2f2;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 4px 4px 16px #0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: .5rem;
+    font-size: 1rem;
+    transition: ease 0.2s;
+    &:hover{
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+}
+.btn-buscar svg {
+    width: 18px;
+    fill: #f2f2f2;
+    align-items: center;
+}

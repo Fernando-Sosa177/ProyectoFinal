@@ -1,10 +1,14 @@
 nav{
-    background-color: yellow;
+    background-color: #f5db13;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 7%;
     box-shadow: 4px 4px 8px #0002;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 }
 nav svg{
     height: 3rem;

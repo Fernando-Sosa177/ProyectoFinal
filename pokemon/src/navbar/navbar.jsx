@@ -1,4 +1,4 @@
-import { Logo, Luna, Sol } from './icons.jsx';
+import { Logo, Luna, Sol } from '../icons.jsx';
 import './navbar.css'
 
 const Navbar = () => {

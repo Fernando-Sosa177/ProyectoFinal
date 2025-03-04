@@ -1,5 +1,6 @@
 import{useState, useEffect} from 'react'
-import Navbar from './navbar.jsx'
+import Navbar from './navbar/navbar.jsx'
+import Buscador from './search/buscador.jsx'
 
 function App() {
   
@@ -29,7 +30,7 @@ function App() {
     <>
       <Navbar/>
       <div className="App">
-        <h1>Pokédex</h1>
+        <Buscador/>
 
         {
           pokemones.map(pokemon => {

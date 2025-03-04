@@ -4,6 +4,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding-inline: 7%;
+    box-shadow: 4px 4px 8px #0002;
 }
 nav svg{
     height: 3rem;
@@ -33,7 +34,7 @@ li a {
 }
 .switch label{
     background-color: #ccc;
-    width: 4rem;
+    width: 3rem;
     height: 1.5rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -49,5 +50,5 @@ li a {
     transition: ease-in 0.3s;
 }
 .check-switch:checked + .slider{
-    transform: translateX(2.5rem);
+    transform: translateX(1.6rem);
 }

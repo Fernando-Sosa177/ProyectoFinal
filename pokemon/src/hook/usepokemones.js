@@ -7,25 +7,24 @@ function usePokemones(){
     const   [verMas, setVerMas] = useState(true)
 
     let getPokemones = async (url = URL_DEFAULT) => {
-        // Recuperamos la lista de pokemones
-        let response = await fetch(url)
-        let listaPokemones = await response.json()
-        let { next,results} = listaPokemones // Guardamos el result
-        
-        let newPokemones = await Promise.all(
-            results.map(async (pokemon) => {
-                let response = await fetch(pokemon.url)
-                let poke = await response.json()
-        
-                return {
+        let response = await fetch(url);
+        let listaPokemones = await response.json();
+        let { next, results } = listaPokemones;
+    
+        let newPokemones = [];
+        for (const pokemon of results) {
+            let response = await fetch(pokemon.url);
+            let poke = await response.json();
+    
+            newPokemones.push({
                 name: poke.name,
                 id: poke.id,
                 img: poke.sprites.other.dream_world.front_default || poke.sprites.front_default || 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png',
-                }
-            })
-        )
-        return {next, newPokemones}
+            });
         }
+    
+        return { next, newPokemones };
+    };
 
         let obtenerPokemones = async () => {
             let {next, newPokemones} = await getPokemones()

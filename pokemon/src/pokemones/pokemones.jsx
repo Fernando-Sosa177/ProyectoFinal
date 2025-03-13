@@ -3,6 +3,7 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import Cargando from './Cargando'
 import Detalles from '../infopokemon/infopokemon'
 import './pokemones.css'
+import Buscador from '../search/buscador'
 import { useState } from 'react'
 
 function Pokemon ({ id, name, img, verPokemon}){
@@ -18,16 +19,27 @@ function Pokemon ({ id, name, img, verPokemon}){
 }
 function Pokemones (){
 
-    const { pokemones, masPokemones, verMas } = usePokemones()
-    const [ mostrar, SetMostrar ] = useState ({ mostrar: false, pokemon: {} })
+    const { pokemones, masPokemones, verMas, searchPokemon } = usePokemones()
+    const [ mostrar, setMostrar ] = useState ({ mostrar: false, pokemon: {} })
+    const [ busqueda, setBusqueda ] = useState ('')
 
-    let verPokemon = (pokemon) => SetMostrar({ mostrar: true, pokemon }) 
+    let verPokemon = (pokemon) => setMostrar({ mostrar: true, pokemon }) 
 
-    let noVerPokemon = () =>  SetMostrar({ mostrar: false, pokemon: {} }) 
+    let noVerPokemon = () =>  setMostrar({ mostrar: false, pokemon: {} }) 
 
+    let buscarPokemon = async (e) => {
+        e.preventDefault()
+
+        if(!busqueda) return
+
+        let pokemon = await searchPokemon (busqueda)
+
+        setMostrar ({ mostrar: true, pokemon })
+    }
     return(
         <>
             <Detalles { ...mostrar } cerrar = { noVerPokemon }/>
+            <Buscador busqueda={busqueda} setBusqueda={setBusqueda} buscarPokemon={buscarPokemon} />
             <InfiniteScroll
             dataLength={pokemones.length}
             next={masPokemones}

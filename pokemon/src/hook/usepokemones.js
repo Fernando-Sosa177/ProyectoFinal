@@ -15,11 +15,18 @@ function usePokemones(){
         for (const pokemon of results) {
             let response = await fetch(pokemon.url);
             let poke = await response.json();
+
+            let abilities = poke.abilities.map(a => a.ability.name)
+            let stats = poke.stats.map(s => {return { name: s.stat.name, base: s.base_stat}})
+            let types = poke.types.map(t => t.type.name)
     
             newPokemones.push({
                 name: poke.name,
                 id: poke.id,
                 img: poke.sprites.other.dream_world.front_default || poke.sprites.front_default || 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png',
+                abilities,
+                stats,
+                types,
             });
         }
     

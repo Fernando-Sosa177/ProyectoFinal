@@ -25,7 +25,10 @@ function Pokemones (){
 
     let verPokemon = (pokemon) => setMostrar({ mostrar: true, pokemon }) 
 
-    let noVerPokemon = () =>  setMostrar({ mostrar: false, pokemon: {} }) 
+    let noVerPokemon = () =>  {
+        setMostrar({ mostrar: false, pokemon: {} })
+        setBusqueda ('')
+    } 
 
     let buscarPokemon = async (e) => {
         e.preventDefault()

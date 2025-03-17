@@ -55,3 +55,25 @@ li a {
 .check-switch:checked + .slider{
     transform: translateX(1.6rem);
 }
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .logo {
+        width: 40px;
+    }
+    a {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        padding-inline: 5%;
+    }
+    .switch {
+        margin-top: 1rem;
+    }
+}

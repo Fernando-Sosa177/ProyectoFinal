@@ -18,7 +18,7 @@
     box-shadow: 0 8px 32px 0 #0b0467c7;
     width: 100%;
     max-width: 600px;
-    margin-block-end: var(--gap-1);
+    margin-block: auto;
     }
 .register h3{
     color: var(--text);
@@ -29,4 +29,42 @@
     text-decoration: underline;
     text-align: center;
     text-shadow: 4px 4px 4px #0005;
+}
+@media (max-width: 1200px) {
+    .register {
+        padding: 5vw 6vw;
+    }
+    .register h3 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 992px) {
+    .register {
+        padding: 4vw 5vw;
+    }
+    .register h3 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px) {
+    .register {
+        padding: 3vw 4vw;
+    }
+    .register h3 {
+        font-size: 1.4rem;
+    }
+    .register form {
+        max-width: 90%;
+    }
+}
+@media (max-width: 576px) {
+    .register {
+        padding: 2vw 3vw;
+    }
+    .register h3 {
+        font-size: 1.2rem;
+    }
+    .register form {
+        max-width: 100%;
+    }
 }

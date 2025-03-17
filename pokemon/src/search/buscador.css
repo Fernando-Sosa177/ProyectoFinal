@@ -54,3 +54,41 @@
     fill: #f2f2f2;
     align-items: center;
 }
+@media (max-width: 1200px) {
+    .input-buscador {
+        width: 60%;
+    }
+}
+@media (max-width: 992px) {
+    .input-buscador {
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .input-buscador {
+        width: 80%;
+    }
+    .btn-buscar {
+        font-size: 0.9rem;
+        padding: var(--gap-2);
+    }
+}
+@media (max-width: 576px) {
+    .title{
+        margin-block-start: 8rem;
+    }
+    .input-buscador {
+        width: 90%;
+        margin: auto ;
+    }
+    .btn-buscar {
+        margin: auto;
+        font-size: 0.8rem;
+        padding: var(--gap-1);
+        width: 90%;
+    }
+    .buscador {
+        flex-direction: column;
+        gap: var(--gap-2);
+    }
+}

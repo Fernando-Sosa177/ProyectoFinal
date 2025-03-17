@@ -15,6 +15,7 @@
     padding-block-end: var(--gap-2);
 }
 .input-buscador{
+    background-color: var(--card);
     font-size: 1rem;
     color: var(--text);
     width: 50%;
@@ -26,7 +27,7 @@
     outline: none;
 }
 .input-buscador::placeholder{
-    color: #0006;
+    color: #000;
     font-size: 1rem;
 }
 .btn-buscar{

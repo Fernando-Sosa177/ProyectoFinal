@@ -1,0 +1,17 @@
+.button{
+    margin-block: var(--gap-4);
+    padding-block: var(--gap-2);
+    padding-inline: var(--gap-3);
+    border: 1px solid #bb301d;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #eebc88;
+    transition: ease 3s;
+    color: var(--text);
+    font-weight: 900;
+    font-size: 1.5rem;
+    &:hover{
+        transform: scale(.95);
+    }
+}

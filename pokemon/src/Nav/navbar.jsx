@@ -19,7 +19,7 @@ const Navbar = () => {
         <ul>
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="#">Favoritos</Link></li>
-            <li><Link to="/Contacto">Contacto</Link></li>
+            <li><Link to="/Registrodex">Registrarse</Link></li>
         </ul>
         <div className='switch'>
             <Sol/>

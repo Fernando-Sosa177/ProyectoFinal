@@ -1,9 +1,9 @@
 import usePokemones from '../hook/usepokemones'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import Cargando from './Cargando'
-import Detalles from '../infopokemon/infopokemon'
+import Detalles from '../Infopokemon/infopokemon'
 import './pokemones.css'
-import Buscador from '../search/buscador'
+import Buscador from '../Search/buscador'
 import { useState } from 'react'
 
 function Pokemon ({ id, name, img, verPokemon}){

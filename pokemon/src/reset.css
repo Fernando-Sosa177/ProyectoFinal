@@ -2,6 +2,7 @@
     --back: #fff;
     --card: #eee;
     --text: #111;
+    --bg1: #f5db13cc;
 
     --gap-0: 3rem;
     --gap-1: 1.5rem;
@@ -29,4 +30,5 @@ body{
     --back: #1E1E1E;
     --card: #454A54;
     --text: #eee;
+    --bg1: #000;
 }

@@ -1,6 +1,6 @@
-import Navbar from './navbar/navbar.jsx';
-import Pokemones from './pokemones/pokemones.jsx';
-import Contacto from './contacto.jsx';
+import Navbar from './Nav/navbar.jsx';
+import Pokemones from './Pokemones/pokemones.jsx';
+import Form from './components/Form/form.jsx';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -8,14 +8,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
+      <Navbar/>
         <Routes>
-            <Route path='/' element= {<Navbar/>}/>
-            <Route path='/Contacto' element= {<Contacto/>} />
+            <Route path='/' element= {<Pokemones/>}/>
+            <Route path='/Registrodex' element= {<Form/>}/>
         </Routes>
-        <Navbar/>
-        <Pokemones/>
-
       </BrowserRouter>
     </>
   )}

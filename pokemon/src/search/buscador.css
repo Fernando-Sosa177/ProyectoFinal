@@ -1,10 +1,9 @@
 .title{
     width: 100%;
-    padding: 1.5rem;
+    padding: var(--gap-1);
     text-align: center;
     align-items: center;
-    margin-block-start: 3rem;
-    background-color: var(--card);
+    margin-block-start: var(--gap-0);
     font-size: 1.5rem;
     font-weight: 400;
     text-shadow: 4px 4px 8px #0009;
@@ -12,16 +11,15 @@
 .buscador{
     display: flex;
     justify-content: center;
-    background-color: var(--card);
-    gap: .5rem;
-    padding-block-end: 1rem;
+    gap: var(--gap-3);
+    padding-block-end: var(--gap-2);
 }
 .input-buscador{
     font-size: 1rem;
     color: var(--text);
     width: 50%;
     height: 3rem;
-    padding: 0.3rem;
+    padding: var(--gap-4);
     border-radius: 10px;
     border: 1px solid #000;
     box-shadow: 4px 4px 8px #0009;
@@ -30,20 +28,19 @@
 .input-buscador::placeholder{
     color: #0006;
     font-size: 1rem;
-    
 }
 .btn-buscar{
-    background-color: #26e;
+    background-color: var(--color);
     color: #f2f2f2;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: var(--gap-3);
     border: none;
     box-shadow: 4px 4px 16px #0002;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    gap: .5rem;
+    gap: var(--gap-3);
     font-size: 1rem;
     transition: ease 0.2s;
     &:hover{

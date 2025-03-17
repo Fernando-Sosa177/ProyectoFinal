@@ -1,5 +1,5 @@
 nav{
-    background-color: #f5db13;
+    background-color: #f5db13cc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@ nav svg{
 ul{
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: var(--gap-2);
 }
 li a {
     font-weight: 900;
@@ -30,7 +30,7 @@ li a {
 .switch{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--gap-3);
 }
 .switch svg{
     height: 1.5rem;
@@ -40,17 +40,16 @@ li a {
     background-color: #ccc;
     width: 3rem;
     height: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 2px;
 }
 .slider {
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 1.5rem;
-    background-color: #fff;
+    border-radius: 24px;
+    background-color: var(--back);
     transition: ease-in 0.3s;
 }
 .check-switch:checked + .slider{

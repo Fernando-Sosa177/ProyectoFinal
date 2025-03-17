@@ -1,7 +1,7 @@
 .cargando{
     border: solid 5px #e2e2e2;
-    border-top-color: #26e;
-    border-right-color: #26e;
+    border-top-color: var(--color);
+    border-right-color: var(--color);
     border-radius: 50%;
     height: 1.5rem;
     width: 1.5rem;

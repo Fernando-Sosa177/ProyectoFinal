@@ -4,7 +4,7 @@ function Buscador({ busqueda, setBusqueda, buscarPokemon}) {
 
     return(
         <>
-        <h2 className='title'>Busca un pokémon por su nombre o usando su número de la Pokédex Nacional</h2>
+        <h2 className='title'>Busca un pokémon por su nombre o usando su número</h2>
         <form className='buscador' onSubmit={buscarPokemon}>
             <input type='text' placeholder='Encuentra tu pokémon' className='input-buscador'
             value={ busqueda }

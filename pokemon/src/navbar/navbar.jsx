@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Logo, Luna, Sol } from '../icons.jsx';
+import {Link} from 'react-router-dom'
 import './navbar.css'
 
 const Navbar = () => {
@@ -16,9 +17,9 @@ const Navbar = () => {
         <nav>
         <Logo className="logo"/>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tipos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="#">Favoritos</Link></li>
+            <li><Link to="/Contacto">Contacto</Link></li>
         </ul>
         <div className='switch'>
             <Sol/>
